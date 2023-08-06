@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
 import { Html, useProgress } from "@react-three/drei";
+import React from "react";
 
 function Loader() {
-  const { progress, total, active, item } = useProgress();
+  const { progress } = useProgress();
 
-  return <Html center> 
-  <progress value={progress} max={100}></progress>
-  {progress} % loaded</Html>;
+  return (
+    <Html center>
+      <progress value={0} max={100}></progress>
+      {progress} % loaded
+    </Html>
+  );
 }
 
 export default Loader;

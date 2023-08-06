@@ -1,5 +1,4 @@
 import React from "react";
-import { usePlane } from "@react-three/cannon";
 
 function Plane(props) {
   return (
